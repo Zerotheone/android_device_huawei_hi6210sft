@@ -1,0 +1,29 @@
+# Audio
+/dev/hifi_misc            0770   root        audio
+
+# Graphics
+/dev/ion                  0664   system     system
+/dev/mali                 0666   system     graphics
+
+# Camera
+/dev/video0               0660   system     camera 
+/dev/cnm_jpu              0660   system     camera
+/dev/cnm_vpu              0660   system     camera
+
+# Media
+/dev/appvcom12		  0660   media      media
+/dev/ttyAMA0		  0660   media      media
+/dev/ttyAMA1		  0660   media      media
+
+# NFC
+/dev/pn544                0660   nfc        nfc
+
+# Radio
+/dev/block/mmcblk0p19     0660   system     system
+/dev/akm09911_dev         0660   system     system
+/dev/appvcom5             0660   radio      radio
+/dev/appvcom13		  0660   radio      radio
+/dev/appvcom14		  0660   radio      radio
+/dev/appvcom15		  0660   radio      radio
+/dev/miscnff              0770   root       system
+
