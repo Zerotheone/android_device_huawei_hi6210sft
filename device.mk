@@ -114,6 +114,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/ramdisk/fstab.hi6210sft:root/fstab.hi6210sft \
         $(LOCAL_PATH)/ramdisk/init.hi6210sft.rc:root/init.hi6210sft.rc \
+        $(LOCAL_PATH)/ramdisk/init.hi6210sft.usb.rc:root/init.hi6210sft.usb.rc \
         $(LOCAL_PATH)/ramdisk/ueventd.hi6210sft.rc:root/ueventd.hi6210sft.rc
 
 # RIL

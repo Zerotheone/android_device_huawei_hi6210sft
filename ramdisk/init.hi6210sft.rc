@@ -7,7 +7,7 @@ on init
     write /proc/sys/kernel/randomize_va_space 0
 
 on fs
-    mount_all /fstab.hikey
+    mount_all /fstab.hi6210sft
 
 on post-fs-data
     mkdir /data/media 0770 media_rw media_rw
