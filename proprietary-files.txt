@@ -1,3 +1,21 @@
+# Bluetooth
+etc/bluetooth/auto_pair_devlist.conf
+etc/bluetooth/bt_did.conf
+etc/bluetooth/bt_stack.conf
+etc/bluetooth/bt_stack_beta.conf
+etc/bluetooth/bt_stack_log.conf
+
+lib/libbt_factory_test.so
+lib/libbt_factory_test_hi110x.so
+
+lib64/libbt_factory_test.so
+lib64/libbt_factory_test_hi110x.so
+
+vendor/lib/libbt-vendor.so
+vendor/lib/libbt-vendor-hi110x.so
+
+vendor/lib64/libbt-vendor-hi110x.so
+
 # Graphics
 lib/egl/libGLES_android.so
 lib/egl/libGLES_mali.so
