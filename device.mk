@@ -30,6 +30,10 @@ PRODUCT_PACKAGES += \
      	tinypcminfo \
      	sound_trigger.primary.hi6210sft \
 
+# Blobs
+PRODUCT_RESTRICT_VENDOR_FILES := false
+$(call inherit-product-if-exists, vendor/huawei/hi6210sft/hi6210sft-vendor.mk)
+
 # Codecs
 PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/rootdir/etc/media_codecs.xml:system/etc/media_codecs.xml \
@@ -104,7 +108,3 @@ PRODUCT_PACKAGES += \
 # Zygote
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	ro.zygote=zygote64_32
-
-# Call vendor files (by now just put all files in /vendor dir and adjust vendor.mk file)
-$(call inherit-product, $(LOCAL_PATH)/vendor.mk)
-
