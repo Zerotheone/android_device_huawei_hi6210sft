@@ -1,7 +1,5 @@
 # Device
 $(call inherit-product, device/linaro/hi6210sft/device.mk)
-$(call inherit-product, device/linaro/hi6210sft/vendor.mk)
-
 
 #
 # Overrides

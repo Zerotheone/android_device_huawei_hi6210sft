@@ -30,6 +30,11 @@ PRODUCT_PACKAGES += \
      	tinypcminfo \
      	sound_trigger.primary.hi6210sft \
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    	bt_vendor.conf \
+    	libbt-vendor
+
 # Blobs
 PRODUCT_RESTRICT_VENDOR_FILES := false
 $(call inherit-product-if-exists, vendor/huawei/hi6210sft/hi6210sft-vendor.mk)
