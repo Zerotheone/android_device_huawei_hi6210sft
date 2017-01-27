@@ -1,54 +1,3 @@
-#################################################################################
-#
-#				P8 Lite
-#			    Propietary Blobs
-#
-#################################################################################
-
-
-
-
-
-#Overlay
-#DEVICE_PACKAGE_OVERLAYS := device/HUAWEI/hi6210sft/overlay
-
-#Ramdisk
-PRODUCT_COPY_FILES += \
-		device/linaro/hi6210sft/rootdir/fstab.hi6210sft:root/fstab.hi6210sft \
-		device/linaro/hi6210sft/rootdir/init.connectivity.rc:root/init.connectivity.rc \
-		device/linaro/hi6210sft/rootdir/init.hi6210sft.rc:root/init.hi6210sft.rc \
-		device/linaro/hi6210sft/rootdir/init.hwconfig.rc:root/init.hwconfig.rc \
-		device/linaro/hi6210sft/rootdir/ueventd.hi6210sft.rc:root/ueventd.hi6210sft.rc \
-		device/linaro/hi6210sft/rootdir/init.hi6210sft.usb.rc:root/init.hi6210sft.usb.rc \
-		device/linaro/hi6210sft/rootdir/sbin/oeminfo_nvm_server:root/sbin/oeminfo_nvm_server \
-		device/linaro/hi6210sft/rootdir/sbin/volisnotd:root/sbin/volisnotd \
-		device/linaro/hi6210sft/rootdir/sbin/teecd:root/sbin/teecd \
-
-#Audio Config
-PRODUCT_COPY_FILES += \
-vendor/etc/audio_effects.conf:system/etc/audio_effects.conf \
-vendor/etc/audio_policy.conf:system/etc/audio_policy.conf \
-device/linaro/hi6210sft/kernel:kernel
-
-#Media codecs
-PRODUCT_COPY_FILES += \
-		vendor/hi6210sft/etc/media_codecs.xml:system/etc/media_codecs.xml \
-		vendor/hi6210sft/etc/media_profiles.xml:system/etc/media_codecs.xml
-
-#Bluetooth
-PRODUCT_COPY_FILES += \
-		vendor/hi6210sft/lib/hw/bluetooth.default.so:system/lib/hw/bluetooth.default.so \
-		vendor/hi6210sft/vendor/lib/libbt-vendor-hi110x.so:system/vendor/lib/libbt-vendor-hi110x.so \
-		vendor/hi6210sft/vendor/lib/libbt-vendor.so:system/vendor/lib/libbt-vendor.so \
-		vendor/hi6210sft/vendor/lib/libbt-vendor-hi110x.so:system/vendor/lib/libbt-vendor-hi110x.so \
-		vendor/hi6210sft/etc/bluetooth/auto_pair_devlist.conf:system/etc/bluetooth/auto_pair_devlist.conf \
-		vendor/hi6210sft/etc/bluetooth/bt_did.conf:system/etc/bluetooth/bt_did.conf \
-		vendor/hi6210sft/etc/bluetooth/bt_stack.conf:system/etc/bluetooth/bt_stack.conf \
-		vendor/hi6210sft/etc/bluetooth/bt_stack_beta.conf:system/etc/bluetooth/bt_stack_beta.conf \
-		vendor/hi6210sft/etc/bluetooth/bt_stack_log.conf:system/etc/bluetooth/bt_stack_log.conf \
-		vendor/hi6210sft/etc/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf \
-		vendor/hi6210sft/lib/libbluetoothex_jni.so:system/lib/libbluetoothex_jni.so \
-		vendor/hi6210sft/lib64/libbluetoothex_jni.so:system/lib64/libbluetoothex_jni.so
 
 # Graphics
 PRODUCT_COPY_FILES += \
@@ -290,19 +239,3 @@ PRODUCT_COPY_FILES += \
 			vendor/hi6210sft/etc/hisi_cfg.ini:system/etc/hisi_cfg.ini \
 			vendor/hi6210sft/etc/hisi_cfg_alice.ini:system/etc/hisi_cfg_alice.ini
 
-
-#Hardware Packages
-PRODUCT_PACKAGES += \
-audio.primary.default \
-audio_policy.stub \
-audio.a2dp.default \
-audio.usb.default \
-audio.r_submix.default \
-libaudioutils \
-libtinyalsa \
-tinyplay \
-tinycap \
-tinymix \
-tinypcminfo \
-sound_trigger.primary.hi6210sft \
-libion.huawei
