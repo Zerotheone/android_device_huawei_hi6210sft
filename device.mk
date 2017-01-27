@@ -51,7 +51,17 @@ PRODUCT_PACKAGES += \
 	ion-unit-tests \
 	iontest \
 	libion \
-        libion.huawei \	
+        libion.huawei
+
+# Kernel
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+LOCAL_KERNEL := device/huawei/hi6210sft/kernel
+else
+LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+endif
+
+PRODUCT_COPY_FILES += \
+    	$(LOCAL_KERNEL):kernel
 
 # LibHi6210SFT
 PRODUCT_PACKAGES += \
